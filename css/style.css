@@ -38,6 +38,7 @@ h2 {
 /*
 HEADER
 */
+
 .header {
     box-shadow: 0px 3px 6px #00000029;
     height: 70px;
@@ -80,13 +81,57 @@ HEADER
     color: var(--color-black);
 }
 
-
-
 /*
 HERO
  */
 
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.hero__content {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.hero__header{
+    font-family: var(--font-raleway), sans-serif;
+    font-size: 3.0625rem;
+}
+
+.hero__heading {
+    margin-top: 20px;
+    margin-bottom: 38px;
+}
+
+.btn a {
+    margin: 100px 0;
+}
+
+.btn {
+    color: var(--color-white);
+    padding: 20px 40px;
+    box-shadow: 5px 10px 14px var(--color-main-shadow);
+    border-radius: 40px;
+    display: inline-block;
+}
+
+.btn--primary {
+    background-color: var(--color-main);
+    font-weight: bold;
+
+}
+
+.btn--large {
+    padding: 22px 157px;
+}
+
+.hero__image {
+    width: 100%;
+    height: auto;
+}
 
 /*
 STATS SECTION
