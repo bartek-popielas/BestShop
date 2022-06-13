@@ -502,3 +502,29 @@ CONTACT
 FOOTER
  */
 
+.footer {
+    height: 90px;
+    background-color: var(--color-light-grey);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__copy {
+    font-size: 0.6875rem;
+    color: var(--color-grey);
+    margin-top: 6px;
+}
+
+.footer__icons a {
+   padding: 0 5px;
+}
