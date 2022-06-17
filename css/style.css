@@ -123,8 +123,13 @@ HERO
 .btn--primary {
     background-color: var(--color-main);
     font-weight: bold;
-
 }
+
+.btn--primary:focus, .btn--primary:hover {
+    background-color: var(--color-grey);
+    transition: 0.3ms;
+}
+
 
 .btn--large {
     padding: 22px 157px;
@@ -434,6 +439,8 @@ PRICES
     bottom: -20px;
     background-color: var(--accent-color);
     left: 32%;
+    font-size: 0.8125rem;
+    font-weight: 600;
 }
 
 .pricing__box--professional {
