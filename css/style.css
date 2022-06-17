@@ -7,6 +7,7 @@
     --color-grey: #a5a5a5;
     --color-light-grey: #f7f7f7;
     --color-white: #ffffff;
+    --color-contact-gray: #707070;
     --pricing-type-color: #13253B;
     --btn-radius: 35px;
     --font-raleway: "Raleway", sans-serif;
@@ -496,6 +497,110 @@ PRICES
 CONTACT
  */
 
+.contact {
+    display: flex;
+    margin-top: 155px;
+    margin-bottom: 70px;
+    max-width: 896px;
+}
+
+.contact__column {
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.contact__title {
+    text-align: left;
+    font-size: 3.0625rem;
+    font-family: var(--font-raleway);
+    line-height: 3.5625rem;
+    margin-bottom: 22px;
+}
+
+.contact__description {
+    margin-bottom: 42px;
+}
+
+.contact__details a {
+    color: var(--color-grey);
+}
+
+.contact__details a:first-child {
+    margin-right: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label {
+    text-transform: uppercase;
+    color: var(--color-main);
+    font-size: 0.6875rem;
+    line-height: 0.9375rem;
+    letter-spacing: 0.205rem;
+    font-weight: 700;
+}
+
+.form__input {
+    border: none;
+    border-bottom: 1px solid var(--color-black);
+    display: flex;
+    width: 440px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.form__checkbox {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 12px;
+    font-size: 1.375rem;
+    padding-left: 35px;
+}
+
+.form__checkbox input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.form__checkbox .checkbox {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    height: 24px;
+    width: 24px;
+    border: 1px solid var(--color-grey);
+    background-color: var(--color-white);
+    border-radius: 4px;
+}
+
+.form__checkbox input:checked ~ .checkbox {
+    background-image: url("../images/Checkmark.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+.accept__text {
+    font-size: 0.75rem;
+    color: var(--color-contact-gray);
+    line-height: 1.0625rem;
+}
+
+.form .btn--primary{
+    font-size: 0.8125rem;
+    padding: 20px 97px;
+    align-self: flex-end;
+    margin-top: 20px;
+    border: none;
+}
 
 
 /*
@@ -505,6 +610,7 @@ FOOTER
 .footer {
     height: 90px;
     background-color: var(--color-light-grey);
+    box-shadow: 0 -5px 40px #00000029;
 }
 
 .footer__container {
